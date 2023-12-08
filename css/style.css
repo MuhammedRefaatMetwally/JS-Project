@@ -1,0 +1,119 @@
+:root {
+  --mainColor: aqua;
+  --mainColorTransparent: rgba(0, 255, 255, 0.5);
+  --mainColorSuperTransparent: rgba(0, 255, 255, 0.3);
+  --purpleColor: blueviolet;
+  --headerColor: cadetblue;
+  --cardBody: paleturquoise;
+  --cardOverlayColor: rgb(0, 0, 139, 0.5);
+}
+
+body {
+  height: 4000px;
+}
+
+#user_info {
+  display: none;
+}
+
+.fa-heart {
+  cursor: pointer;
+}
+
+#user_info li {
+  list-style: none;
+  margin-right: 20px;
+  text-align: center;
+}
+
+#user_info li a#user {
+  margin-right: 120px;
+}
+
+#user_info a {
+  text-decoration: none;
+}
+
+nav #user_info li i {
+  color: black;
+  font-size: 24px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+nav #user_info li {
+  margin: 0px 64px 0px 0px;
+  position: relative;
+}
+
+nav #user_info li .badge {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  display: block;
+  border-radius: 50%;
+  top: -8px;
+  right: -10px;
+  font-size: 13px;
+  display: none;
+}
+
+.product_img {
+  height: 55%;
+}
+
+/********************************************/
+
+.cart_products {
+  position: absolute;
+  z-index: 5;
+  width: 260px;
+  transform: translate(-100px, 0);
+  background-color: white;
+  top: 56px;
+  padding: 10px;
+  border: 1px solid dodgerblue;
+  display: none;
+}
+
+/******************************************************/
+
+.totalPrice {
+  text-align: center;
+  margin: 16px 0px;
+}
+
+.favorite {
+  text-align: center;
+  margin-top: 48px;
+}
+
+.special-favorite {
+  font-weight: bold;
+  margin: 24px 0px;
+  font-size: 32px;
+}
+
+.line {
+  background-color: red;
+  height: 3px;
+  width: 120px;
+  margin: auto;
+  transition: 0.8s;
+}
+
+.favorite:hover .line {
+  background-color: red;
+  height: 3px;
+  width: 200px;
+  margin: auto;
+  transition: 0.6s;
+}
+
+.badgeItems {
+  border: 1px solid green;
+  padding: 8px;
+}
